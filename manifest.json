@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Catthode",
+    "description": "Warm OLED theme for Spotify",
+    "preview": "preview/catthode-spicetify.svg",
+    "readme": "README.md",
+    "usercss": "Catthode/user.css",
+    "schemes": "Catthode/color.ini",
+    "authors": [
+      {
+        "name": "Catthode",
+        "url": "https://github.com/catthode"
+      }
+    ],
+    "tags": ["dark", "oled", "warm"]
+  }
+]

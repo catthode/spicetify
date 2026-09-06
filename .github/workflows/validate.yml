@@ -1,0 +1,49 @@
+name: Validate theme
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  theme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm install --ignore-scripts
+      - run: npm run lint
+      - name: Validate Spicetify files and metadata
+        run: |
+          python - <<'PY'
+          import configparser
+          import json
+          from pathlib import Path
+
+          manifest = json.loads(Path("manifest.json").read_text())
+          assert len(manifest) == 1 and manifest[0]["name"] == "Catthode"
+          for key in ("preview", "readme", "usercss", "schemes"):
+              assert Path(manifest[0][key]).is_file(), key
+
+          colors = configparser.ConfigParser()
+          colors.read("Catthode/color.ini")
+          required = {
+              "text", "subtext", "main", "main-elevated", "highlight",
+              "sidebar", "player", "card", "shadow", "selected-row",
+              "button", "button-active", "button-disabled", "notification",
+              "notification-error", "equalizer", "misc"
+          }
+          assert "Catthode" in colors
+          assert not (required - set(colors["Catthode"]))
+          for key, value in colors["Catthode"].items():
+              assert len(value) in (3, 6), (key, value)
+              int(value, 16)
+          print("Spicetify theme structure passed")
+          PY

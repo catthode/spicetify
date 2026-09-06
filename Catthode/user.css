@@ -1,0 +1,101 @@
+:root {
+  --catthode-amber-glow: rgb(255 158 59 / 18%);
+  --catthode-blue-glow: rgb(156 217 230 / 14%);
+}
+
+body,
+.Root,
+.Root__main-view,
+.main-view-container,
+.main-view-container__scroll-node {
+  color: var(--spice-text);
+  background-color: var(--spice-main);
+}
+
+.Root__nav-bar,
+.Root__now-playing-bar,
+.Root__right-sidebar {
+  background-color: var(--spice-sidebar);
+}
+
+.main-topBar-background,
+.main-topBar-overlay,
+.main-entityHeader-backgroundColor,
+.main-actionBarBackground-background {
+  background-color: var(--spice-main) !important;
+}
+
+.main-card-card,
+.main-contextMenu-menu,
+.main-trackList-trackListRow:hover,
+.x-entityImage-imageContainer:hover {
+  background-color: var(--spice-card);
+}
+
+.main-card-card:hover,
+.main-contextMenu-menuItem:hover,
+.main-trackList-trackListRow[aria-selected="true"] {
+  background-color: var(--spice-highlight);
+}
+
+.main-navBar-navBarLinkActive,
+.main-yourLibraryX-navLinkActive,
+.main-rootlist-rootlistItemLinkActive {
+  color: var(--spice-text) !important;
+  background: var(--spice-highlight) !important;
+  box-shadow: inset 3px 0 var(--spice-button);
+}
+
+.main-playButton-PlayButton,
+button[data-encore-id="buttonPrimary"] {
+  color: var(--spice-main) !important;
+  background-color: var(--spice-button) !important;
+  box-shadow: 0 0 18px var(--catthode-amber-glow);
+}
+
+.main-playButton-PlayButton:hover,
+button[data-encore-id="buttonPrimary"]:hover {
+  background-color: var(--spice-button-active) !important;
+}
+
+a,
+.main-trackList-rowTitle:hover,
+.main-entityHeader-subtitle a:hover {
+  color: var(--spice-blue);
+}
+
+.main-addButton-active,
+.control-button-heart[aria-checked="true"] {
+  color: var(--spice-red) !important;
+}
+
+.playback-bar__progress-time-elapsed,
+.main-trackList-playingIcon,
+.main-trackList-playingIcon + span {
+  color: var(--spice-green) !important;
+}
+
+.progress-bar__fg,
+.x-progressBar-progressBarBg > div > div {
+  background-color: var(--spice-button) !important;
+}
+
+input:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--spice-yellow) !important;
+  outline-offset: 2px;
+}
+
+::selection {
+  color: var(--spice-main);
+  background: var(--spice-peach);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--spice-surface2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--spice-overlay1);
+}

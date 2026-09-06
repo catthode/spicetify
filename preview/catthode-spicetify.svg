@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Catthode Spicetify preview</title>
+  <desc id="desc">A true-black music library with amber controls and warm cover art.</desc>
+  <rect width="1200" height="700" rx="22" fill="#000"/>
+  <rect x="20" y="20" width="240" height="590" rx="18" fill="#080808"/>
+  <text x="48" y="72" fill="#ff9e3b" font-family="system-ui" font-size="26" font-weight="700">Catthode</text>
+  <text x="48" y="132" fill="#fff" font-family="system-ui" font-size="18">⌂  Home</text>
+  <text x="48" y="178" fill="#b3b3b3" font-family="system-ui" font-size="18">⌕  Search</text>
+  <text x="48" y="244" fill="#b3b3b3" font-family="system-ui" font-size="15">YOUR LIBRARY</text>
+  <rect x="36" y="264" width="208" height="48" rx="8" fill="#2d2d2d"/>
+  <text x="52" y="295" fill="#fae2c8" font-family="system-ui" font-size="17">Warm rotation</text>
+  <rect x="278" y="20" width="902" height="590" rx="18" fill="#000"/>
+  <text x="320" y="84" fill="#fff" font-family="system-ui" font-size="34" font-weight="700">Made for the glow</text>
+  <rect x="320" y="120" width="220" height="220" rx="14" fill="#f08d49"/>
+  <circle cx="430" cy="230" r="72" fill="#000"/><circle cx="430" cy="230" r="18" fill="#ffb86c"/>
+  <rect x="568" y="120" width="220" height="220" rx="14" fill="#9cd9e6"/>
+  <path d="M610 290l62-116 72 116z" fill="#141414"/>
+  <rect x="816" y="120" width="220" height="220" rx="14" fill="#eba4be"/>
+  <circle cx="926" cy="230" r="70" fill="#141414"/>
+  <text x="320" y="380" fill="#ffb86c" font-family="system-ui" font-size="18">Analog Heart</text>
+  <text x="568" y="380" fill="#fff" font-family="system-ui" font-size="18">Blue Static</text>
+  <text x="816" y="380" fill="#fff" font-family="system-ui" font-size="18">Night Signal</text>
+  <rect x="20" y="628" width="1160" height="52" rx="16" fill="#0b0b0b"/>
+  <circle cx="58" cy="654" r="18" fill="#f08d49"/>
+  <text x="90" y="660" fill="#fff" font-family="system-ui" font-size="16">Analog Heart</text>
+  <path d="M530 654h140" stroke="#636363" stroke-width="4"/><path d="M530 654h66" stroke="#ff9e3b" stroke-width="4"/>
+  <circle cx="600" cy="654" r="17" fill="#ff9e3b"/><path d="M594 645l13 9-13 9z" fill="#000"/>
+</svg>
