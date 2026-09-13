@@ -110,6 +110,7 @@ button[data-encore-id="buttonPrimary"] {
   --background-base: var(--catthode-wheat);
   --background-highlight: var(--catthode-tan);
   --background-press: var(--catthode-gold);
+
   color: var(--spice-player);
 }
 
