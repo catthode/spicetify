@@ -4,7 +4,7 @@
 
 A warm, true-black Spotify theme for [Spicetify](https://spicetify.app/), with a low-maintenance CSS layer and one focused Catthode color scheme.
 
-![Catthode Spicetify preview](preview/catthode-spicetify.svg)
+![Catthode Spicetify preview](preview/catthode-spicetify-real.png)
 
 ## Install from GitHub
 
@@ -21,7 +21,7 @@ The theme directory is usually `~/.config/spicetify/Themes` on macOS/Linux and `
 
 ## Marketplace
 
-The root `manifest.json` contains the metadata used by Spicetify's community theme catalog. Catthode has been visually checked in Spotify 1.2.99.317 with Spicetify 2.45.0 on macOS. The catalog currently uses the repository-native preview above; a privacy-safe client screenshot remains a documentation follow-up.
+The root `manifest.json` contains the metadata used by Spicetify's community theme catalog. Catthode has been visually checked in Spotify 1.2.99.317 with Spicetify 2.45.0 on macOS. The preview above is a crop of the public Lateralus album view; it excludes the library rail, account avatar, device name, recommendations, and notifications.
 
 Spotify-generated artwork and promotional surfaces can retain Spotify's own dynamic colors. Catthode does not patch Spicetify or Spotify to override those app-owned assets.
 

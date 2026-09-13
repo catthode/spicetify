@@ -2,7 +2,7 @@
   {
     "name": "Catthode",
     "description": "Warm OLED theme for Spotify",
-    "preview": "preview/catthode-spicetify.svg",
+    "preview": "preview/catthode-spicetify-real.png",
     "readme": "README.md",
     "usercss": "Catthode/user.css",
     "schemes": "Catthode/color.ini",

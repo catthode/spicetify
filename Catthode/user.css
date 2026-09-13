@@ -138,6 +138,28 @@ a,
   color: var(--catthode-gold) !important;
 }
 
+/* The active-track equalizer is a masked icon, so color alone does not tint it. */
+.main-trackList-playingIcon {
+  background-color: var(--catthode-gold) !important;
+  fill: var(--catthode-gold) !important;
+}
+
+.main-trackList-playingIcon svg,
+.main-trackList-playingIcon path,
+.main-trackList-playingIcon rect {
+  color: var(--catthode-gold) !important;
+  fill: var(--catthode-gold) !important;
+}
+
+/* Spotify renders the active-track equalizer as a green image asset, not SVG. */
+img[src*="equaliser-green"],
+img[src*="equaliser-animated-green"],
+img[src*="equalizer-green"],
+img[src*="equalizer-animated-green"] {
+  filter: brightness(0) saturate(100%) invert(78%) sepia(48%) saturate(662%)
+    hue-rotate(329deg) brightness(101%) contrast(101%);
+}
+
 .progress-bar__fg,
 .x-progressBar-progressBarBg > div > div {
   background-color: var(--catthode-clay) !important;
