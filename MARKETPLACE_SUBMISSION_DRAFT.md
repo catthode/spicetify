@@ -1,6 +1,6 @@
 # Spicetify Marketplace publishing draft
 
-Status: approved for publication with the repository-native SVG preview. A genuine privacy-safe client screenshot remains a documentation follow-up.
+Status: published from `main` with the repository-native SVG preview. A genuine privacy-safe client screenshot remains a documentation follow-up.
 
 Spicetify Marketplace currently discovers themes from public GitHub repositories carrying the `spicetify-themes` topic. The root `manifest.json` already supplies the required name, description, preview, README, CSS, scheme, author, and tag metadata.
 
@@ -14,8 +14,8 @@ Spicetify Marketplace currently discovers themes from public GitHub repositories
 - [x] Use the existing repository-native SVG as the initial privacy-safe Marketplace preview.
 - [ ] Later replace it with a genuine PNG from a public artist or album page with the library rail, account avatar, device name, recommendations, and notifications outside the frame.
 - [x] Verify `catthode/spicetify` is public and uses `main` as its default branch.
-- [ ] Push the final theme files and approved preview to `main` and verify CI.
-- [ ] Add the GitHub topic `spicetify-themes` to publish it to Marketplace discovery.
+- [x] Push the final theme files and approved preview to `main` and verify CI.
+- [x] Add the GitHub topic `spicetify-themes` to publish it to Marketplace discovery.
 
 ## Listing copy
 
