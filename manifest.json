@@ -6,6 +6,9 @@
     "readme": "README.md",
     "usercss": "Catthode/user.css",
     "schemes": "Catthode/color.ini",
+    "include": [
+      "https://cdn.jsdelivr.net/gh/catthode/spicetify@main/Catthode/theme.js"
+    ],
     "authors": [
       {
         "name": "Catthode",

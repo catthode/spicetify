@@ -1,6 +1,58 @@
 :root {
-  --catthode-amber-glow: rgb(255 158 59 / 18%);
-  --catthode-blue-glow: rgb(156 217 230 / 14%);
+  --catthode-wheat: #fae2c8;
+  --catthode-tan: #d9b98c;
+  --catthode-gold: #ffb86c;
+  --catthode-amber: #ff9e3b;
+  --catthode-clay: #f08d49;
+}
+
+.encore-dark-theme,
+.encore-light-theme {
+  --text-bright-accent: var(--catthode-gold) !important;
+  --text-positive: var(--catthode-gold) !important;
+  --essential-bright-accent: var(--catthode-amber) !important;
+  --essential-positive: var(--catthode-gold) !important;
+}
+
+.encore-dark-theme .encore-bright-accent-set,
+.encore-light-theme .encore-bright-accent-set {
+  --background-base: var(--catthode-amber) !important;
+  --background-highlight: var(--catthode-gold) !important;
+  --background-press: var(--catthode-clay) !important;
+  --background-elevated-base: var(--catthode-gold) !important;
+  --background-elevated-highlight: var(--catthode-wheat) !important;
+  --background-elevated-press: var(--catthode-clay) !important;
+  --background-tinted-base: var(--catthode-amber) !important;
+  --background-tinted-highlight: var(--catthode-gold) !important;
+  --background-tinted-press: var(--catthode-clay) !important;
+  --decorative-subdued: var(--catthode-clay) !important;
+}
+
+.encore-dark-theme .encore-positive-set,
+.encore-light-theme .encore-positive-set {
+  --background-base: var(--catthode-gold) !important;
+  --background-highlight: var(--catthode-wheat) !important;
+  --background-press: var(--catthode-amber) !important;
+  --background-elevated-base: var(--catthode-gold) !important;
+  --background-elevated-highlight: var(--catthode-wheat) !important;
+  --background-elevated-press: var(--catthode-amber) !important;
+  --background-tinted-base: var(--catthode-gold) !important;
+  --background-tinted-highlight: var(--catthode-wheat) !important;
+  --background-tinted-press: var(--catthode-amber) !important;
+  --decorative-subdued: var(--catthode-clay) !important;
+}
+
+.encore-dark-theme .encore-positive-subdued-set,
+.encore-light-theme .encore-positive-subdued-set {
+  --background-base: color-mix(in srgb, var(--catthode-clay) 32%, #000) !important;
+  --background-highlight: color-mix(in srgb, var(--catthode-amber) 42%, #000) !important;
+  --background-press: color-mix(in srgb, var(--catthode-gold) 36%, #000) !important;
+  --text-base: var(--catthode-wheat) !important;
+  --text-subdued: var(--catthode-tan) !important;
+  --text-positive: var(--catthode-gold) !important;
+  --essential-base: var(--catthode-wheat) !important;
+  --essential-subdued: var(--catthode-tan) !important;
+  --essential-positive: var(--catthode-gold) !important;
 }
 
 body,
@@ -46,22 +98,25 @@ body,
   box-shadow: inset 3px 0 var(--spice-button);
 }
 
-.main-playButton-PlayButton,
+.main-playButton-PlayButton.main-playButton-primary,
 button[data-encore-id="buttonPrimary"] {
-  color: var(--spice-main) !important;
-  background-color: var(--spice-button) !important;
-  box-shadow: 0 0 18px var(--catthode-amber-glow);
+  --background-base: var(--catthode-amber);
+  --background-highlight: var(--catthode-gold);
+  --background-press: var(--catthode-clay);
+  --text-base: var(--spice-player);
 }
 
-.main-playButton-PlayButton:hover,
-button[data-encore-id="buttonPrimary"]:hover {
-  background-color: var(--spice-button-active) !important;
+.Root__now-playing-bar .main-playButton-PlayButton.main-playButton-primary {
+  --background-base: var(--catthode-wheat);
+  --background-highlight: var(--catthode-tan);
+  --background-press: var(--catthode-gold);
+  color: var(--spice-player);
 }
 
 a,
 .main-trackList-rowTitle:hover,
 .main-entityHeader-subtitle a:hover {
-  color: var(--spice-blue);
+  color: var(--catthode-wheat);
 }
 
 .main-addButton-active,
@@ -69,15 +124,46 @@ a,
   color: var(--spice-red) !important;
 }
 
-.playback-bar__progress-time-elapsed,
+.playback-bar__progress-time {
+  color: var(--catthode-tan) !important;
+}
+
+.playback-bar__progress-time-elapsed {
+  color: var(--catthode-gold) !important;
+}
+
 .main-trackList-playingIcon,
 .main-trackList-playingIcon + span {
-  color: var(--spice-green) !important;
+  color: var(--catthode-gold) !important;
 }
 
 .progress-bar__fg,
 .x-progressBar-progressBarBg > div > div {
-  background-color: var(--spice-button) !important;
+  background-color: var(--catthode-clay) !important;
+}
+
+.volume-bar .progress-bar__fg,
+.volume-bar .x-progressBar-progressBarBg > div > div {
+  background-color: var(--catthode-tan) !important;
+}
+
+/* Full-screen and Now Playing View lyrics use track-derived inline variables. */
+.lyrics-lyrics-container,
+[data-testid="lyrics-npv-section"] {
+  --lyrics-color-background: color-mix(in srgb, var(--catthode-clay) 22%, var(--spice-main)) !important;
+  --lyrics-color-active: var(--catthode-wheat) !important;
+  --lyrics-color-inactive: var(--catthode-tan) !important;
+  --lyrics-color-passed: var(--catthode-gold) !important;
+  --lyrics-color-messaging: var(--catthode-amber) !important;
+}
+
+/* The mini-player can otherwise inherit green dynamic/extracted text colors. */
+.spotify__container--is-desktop {
+  --extracted-text-subdued: var(--catthode-tan) !important;
+}
+
+.spotify__container--is-desktop .E5uU4WRvoBEYXANP.sLng5bU0NksG33cj {
+  color: var(--catthode-amber) !important;
 }
 
 input:focus-visible,

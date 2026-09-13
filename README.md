@@ -21,7 +21,9 @@ The theme directory is usually `~/.config/spicetify/Themes` on macOS/Linux and `
 
 ## Marketplace
 
-The root `manifest.json` contains the metadata used by Spicetify's community theme catalog. A logged-in Spotify visual check remains on the manual checklist before submission.
+The root `manifest.json` contains the metadata used by Spicetify's community theme catalog. Catthode has been visually checked in Spotify 1.2.99.317 with Spicetify 2.45.0 on macOS. The catalog currently uses the repository-native preview above; a privacy-safe client screenshot remains a documentation follow-up.
+
+Spotify-generated artwork and promotional surfaces can retain Spotify's own dynamic colors. Catthode does not patch Spicetify or Spotify to override those app-owned assets.
 
 ## Remove
 
