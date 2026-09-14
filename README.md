@@ -25,6 +25,10 @@ The root `manifest.json` contains the metadata used by Spicetify's community the
 
 Spotify-generated artwork and promotional surfaces can retain Spotify's own dynamic colors. Catthode does not patch Spicetify or Spotify to override those app-owned assets.
 
+## nix-darwin
+
+The Catthode nix-darwin setup links the checked-in `Catthode` files into `~/.config/spicetify/Themes/Catthode`, keeps `current_theme`, `color_scheme`, and the injection settings selected, creates a backup when needed, and runs `spicetify apply --no-restart` as the logged-in user during activation. It skips the patch while Spotify is running and prints the manual command to run after quitting it. Applying changes Spotify's app bundle in place, so Spotify updates may require another backup/apply cycle.
+
 ## Remove
 
 ```sh
