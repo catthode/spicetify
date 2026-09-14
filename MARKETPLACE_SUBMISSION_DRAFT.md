@@ -24,7 +24,3 @@ Spicetify Marketplace currently discovers themes from public GitHub repositories
 **Description:** A warm, true-black Spotify theme built from Catthode's wheat, tan, gold, amber, and clay palette.
 
 **Tags:** dark, oled, warm
-
-## Known boundary
-
-Spotify-generated artwork and promotional components can retain Spotify's dynamic colors. Addressing those surfaces would require changes beyond a normal Spicetify theme and is intentionally out of scope.
