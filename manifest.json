@@ -1,7 +1,7 @@
 [
   {
     "name": "Catthode",
-    "description": "Warm OLED theme for Spotify",
+    "description": "A warm, true-black Spotify theme built from Catthode's wheat, tan, gold, amber, and clay palette.",
     "preview": "preview/catthode-spicetify-real.png",
     "readme": "README.md",
     "usercss": "Catthode/user.css",

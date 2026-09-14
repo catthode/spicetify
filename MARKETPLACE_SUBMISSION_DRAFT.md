@@ -1,8 +1,8 @@
 # Spicetify Marketplace publishing draft
 
-Status: published from `main` with a genuine privacy-safe client screenshot from the public Lateralus album view.
+Status: ready for Marketplace discovery from `main`; catalog indexing still needs a live check.
 
-Spicetify Marketplace currently discovers themes from public GitHub repositories carrying the `spicetify-themes` topic. The root `manifest.json` already supplies the required name, description, preview, README, CSS, scheme, author, and tag metadata.
+Spicetify Marketplace currently discovers themes from public GitHub repositories carrying the `spicetify-themes` topic. The root `manifest.json` supplies the required name, description, preview, README, CSS, scheme, author, and tag metadata. The documented theme path is repository metadata plus the topic; the separate pull-request workflow on that page is for snippets.
 
 ## Final checks
 
@@ -15,6 +15,7 @@ Spicetify Marketplace currently discovers themes from public GitHub repositories
 - [x] Verify `catthode/spicetify` is public and uses `main` as its default branch.
 - [x] Push the final theme files and approved preview to `main` and verify CI.
 - [x] Add the GitHub topic `spicetify-themes` to publish it to Marketplace discovery.
+- [ ] Verify that Catthode appears in the live Marketplace Themes catalog after the next index refresh.
 
 ## Listing copy
 
